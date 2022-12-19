@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Login Modal</title>
+</head>
+<body>
+    <!-- Outer container -->
+    <div class="bg-pink-50 min-h-screen flex justify-center items-center ">             
+             
+        <!-- Card container -->
+        <div class="flex flex-col m-4 md:flex-row md:m-8">
+            <!-- Left side -->
+            <div class="bg-white rounded-l-2xl p-14 flex flex-col space-y-6 m-4 md:m-0 md:p-20">
+                <div class="flex justify-between">
+                    <div class="text-xl font-sans">Login</div>
+                    <div class="text-white bg-gray-400 w-8 h-8 rounded-full text-xl text-center
+                                absolute top-20 right-10 md:bg-white md:text-black md:top-10">X</div>
+                </div>
+                <div class="font-light">Log in to your account to upload or download pictures, videos or music.</div>
+                <input class="placeholder:font-light p-6 border w-full border-gray-100 rounded-lg" type="text" placeholder="Enter your email address" />
+                <div class="flex flex-col items-center justify-between space-y-2 md:flex-row md:space-y-0">
+                    <div class="text-center text-blue-300">Forgot password</div>
+                    <div class="text-white bg-blue-400 text-center py-5 w-full rounded-lg md:px-8 md:w-auto ">Next -></div>
+                </div>
+                <div class="border border-gray-100"></div>
+                <div class="text-center font-extralight text-gray-300">or log in with</div>
+                <div class="flex flex-col space-y-4 md:flex-row md:justify-between md:space-y-0">
+                    <div class="font-sans text-lg border rounded-lg flex items-center justify-center space-x-2 py-3 md:px-10">
+                        <img src="./images/facebook.png" alt="facebook" class="w-8">
+                        <span>Facebook</span> 
+                    </div>
+                    <div class="font-sans text-lg border rounded-lg flex items-center justify-center space-x-2 py-3 md:px-10">
+                        <img src="./images/google.png" alt="google" class="w-6">
+                        <span>Google</span> 
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side -->
+            <img class="w-[450px] hidden md:block" src="./images/image.jpg" alt="imgs"  />
+        </div>
+    </div>
+</body>
+</html>
