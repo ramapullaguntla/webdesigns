@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Image Gallery</title>
+</head>
+<body>
+    <!-- Outer container -->
+    <div class="bg-cyan-100 min-h-screen flex justify-center items-center ">             
+                    
+        <!-- Inner container -->
+         <div class="bg-white p-6 m-6 rounded-xl">
+            <!-- Navigation links -->
+            <div class="mb-10 flex flex-col justify-center items-center space-y-3 md:flex-row md:space-x-3 md:space-y-0 md:justify-end">
+                 <div class="hover:underline">Vector</div>
+                 <div class="hover:underline">Illustrations</div>
+                 <div class="hover:underline">Images</div>
+                 <div class="hover:underline">Icons</div>
+            </div>
+            <!-- Search and Upload -->
+            <div class="flex flex-col justify-between my-6 space-y-2 md:flex-row">
+                <input class="font-light px-2 py-3 border-b-2" type="text" placeholder="Search"></input>
+                <button class="bg-black text-white py-4 px-10 rounded-lg">Upload</button>
+            </div>
+
+            <!-- Image container -->
+            <div class="grid gap-2 md:grid-cols-3 lg:grid-cols-4">
+                <div class="relative group">
+                    <img src="./images/image1.jpg" alt="" class="w-72" />
+                    <div class="absolute bottom-0 left-0 right-0 bg-black text-white text-center py-2 px-2
+                                bg-opacity-0 group-hover:bg-opacity-30">Hello</div>
+                </div>
+                <div>
+                    <img src="./images/image2.jpg" alt="" class="w-72" />
+                </div>
+                <div>
+                    <img src="./images/image3.jpg" alt="" class="w-72" />
+                </div>
+                <div>
+                    <img src="./images/image4.jpg" alt="" class="w-72" />
+                </div>
+                <div>
+                    <img src="./images/image4.jpg" alt="" class="w-72" />
+                </div>
+                <div>
+                    <img src="./images/image6.jpg" alt="" class="w-72" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
